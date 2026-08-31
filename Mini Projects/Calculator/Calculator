@@ -1,0 +1,42 @@
+Addition = "+"
+Subtraction = "-"
+Multiplication = "*"
+Division = "/"
+name = input("please enter your name: ").title()
+print(f"Welcome Sir {name} Let's start some Calculations!")
+
+a = int(input("please enter a number: "))
+choose = (input("please choose an operation: (+, -, *, /):"))
+b = int(input("Please enter a second number: "))
+
+def addition():
+    print("Result: ", a + b)
+
+def subtraction():
+    print("Result: ", a - b)
+
+def multiplication():
+    print("Result: ", a * b)
+
+def division():
+    if b == 0:
+        print("Division by Zero is not allowed!")
+    else:
+        print("Result:", a / b)
+
+if choose == "+":
+    addition()
+
+elif choose == "-":
+    subtraction()
+
+elif choose == "*":
+    multiplication()
+
+elif choose == "/":
+    division()
+
+else:
+    print("invalid opertaion")
+
+print("Thanks for using my Calculator!")
